@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Formulario F1</h1>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a> |
+    <a href="pilotos.html">Pilotos</a> |
+    <a href="circuitos.html">Circuitos</a> |
+    <a href="carros.html">Carros</a> |
+    <a href="formulario.html">Formulario</a>
+</nav>
+
+<main>
+
+<section>
+    <h2>Fale sobre sua preferencia</h2>
+
+    <form>
+
+        <label>Nome:</label>
+        <input type="text" placeholder="Digite seu nome" required>
+        <br><br>
+
+        <label>Data:</label>
+        <input type="date" required>
+        <br><br>
+
+        <label>Piloto favorito:</label>
+        <input list="pilotos" placeholder="Escolha um piloto">
+        <datalist id="pilotos">
+            <option value="Ayrton Senna">
+            <option value="Michael Schumacher">
+            <option value="Lewis Hamilton">
+        </datalist>
+        <br><br>
+
+        <label>Nota para a F1:</label>
+        <input type="range" min="0" max="10">
+        <br><br>
+
+        <label>Imagem:</label>
+        <input type="file">
+        <br><br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>Projeto Formula 1</p>
+</footer>
+
+</body>
+
+</html>
